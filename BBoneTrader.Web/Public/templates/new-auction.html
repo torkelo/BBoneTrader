@@ -1,0 +1,50 @@
+<script id="new-auction-template" type="text/html">
+
+    <form class="form-horizontal span10 new-auction-form">
+        <fieldset>
+            <legend>New Auction</legend><br/>
+            <div class="row">
+                <div class="span10">
+                    <div class="control-group">
+                        <label for="title" class="control-label">Title:</label>
+
+                        <div class="controls">                                
+                            <input type="text" id="title" class="span5" placeholder="..." />
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="description" class="control-label">Description:</label>
+
+                        <div class="controls">                                
+                            <textarea type="text" id="description" class="span5" placeholder="..."></textarea>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="minBid" class="control-label">Min bid:</label>
+
+                        <div class="controls">                                
+                            <input type="text" id="minBid" class="span1" value="0" placeholder="..." />
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>                                                           
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="button" class="btn btn-success create">
+                <i class="icon-edit icon-white"></i>
+                Create
+            </button> &nbsp;&nbsp;
+            <button href="" class="btn btn cancel">
+                <i class="icon-ban-circle icon-black"></i>
+                Cancel
+            </button>
+        </div>                
+    </form>
+
+</script>

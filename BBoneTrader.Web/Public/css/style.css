@@ -1,0 +1,16 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#auction-list {
+    margin-top: 10px;
+}
+
+.auction-item, .new-auction-form {
+    
+}
+
+p {
+    margin: 0 0 5px;
+}

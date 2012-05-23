@@ -1,0 +1,37 @@
+* fix ravendb
+* place bid
+* signalr updates for place bid
+* live log
+* requirejs
+* jasmine tests
+* coffescript
+
+
+-- plan
+* intro powerpoint
+* Models
+* Collection
+* Events
+
+* MainView
+* ItemView
+* Move render to base view
+* place bid, update model, listen on change
+* place bid using command
+
+* router 
+
+* turn on full app
+* structure, 
+
+* signalr
+* write log 
+* look at place bid / new bid signalr 
+* zombies
+
+
+* how was it?
+*
+
+
+

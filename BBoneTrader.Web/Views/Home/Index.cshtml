@@ -1,0 +1,94 @@
+@using BBoneTrader.Web.Helpers
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>BBoneTrader</title>
+        <link href="@Url.Content("~/public/css/bootstrap.min.css")" rel="stylesheet">
+        <link href="@Url.Content("~/public/css/bootstrap-responsive.min.css")" rel="stylesheet">
+        <link href="@Url.Content("~/public/css/style.css")" rel="stylesheet">
+    </head>
+    
+
+    <body>
+    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">                    
+                    <a class="brand" href="">Backbone Trader</a>
+                    <div class="nav-collapse">
+                        <ul class="nav"> 
+                            <li>
+                                <a href="#" data-route="auctions">
+                                    <i class="icon-list icon-white"></i>
+                                    Auction List</a>
+                                </li>  
+                            </li>
+                            <li>
+                                <a href="#new" data-route="new">
+                                    <i class="icon-edit icon-white"></i>
+                                    New Auction
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#log" data-route="log">
+                                    <i class="icon-eye-open icon-white"></i>
+                                    Log
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container" id="app-view">
+            <div class="row span12">
+                <div class="alert" style="display:none">                           
+                </div>
+            </div> 
+
+            @*<form class="well form-search">
+              <input type="text" class="input-medium search-query">
+              <button type="submit" class="btn">Search</button>
+            </form>*@
+
+            <div id="main-region" class="row span12">               
+
+            </div>     
+            
+        </div>    
+       
+        
+        @Html.RenderTemplates("~/public/templates/html")
+    
+        <script src="@Url.Content("~/public/js/vendor/jquery.min.js")"> </script>                
+        <script src="@Url.Content("~/public/js/vendor/underscore.min.js")"> </script>        
+        <script src="@Url.Content("~/public/js/vendor/backbone.min.js")"> </script>
+        <script src="@Url.Content("~/public/js/vendor/mustache.min.js")"> </script>
+        <script src="@Url.Content("~/public/js/vendor/jquery.effects.core.js")"> </script>
+        <script src="@Url.Content("~/public/js/vendor/jquery.effects.highlight.js")"> </script>
+        <script src="@Url.Content("~/public/js/vendor/jquery.signalR-0.5.0.js")"> </script>
+        <script src="@Url.Content("~/signalr/hubs")"> </script>
+
+        
+        
+        <script src="@Url.Content("~/public/js/BBoneTrader.js")"> </script>
+        <script src="@Url.Content("~/public/js/BBoneTrader.utils.js")"> </script>
+        <script src="@Url.Content("~/public/js/BBoneTrader.views.js")"> </script>
+        <script src="@Url.Content("~/public/js/BBoneTrader.routes.js")"> </script>
+        <script src="@Url.Content("~/public/js/BBoneTrader.hub.js")"> </script>
+
+        <script src="@Url.Content("~/public/js/AuctionList/BBoneTrader.AuctionList.js")"> </script>
+        <script src="@Url.Content("~/public/js/NewAuction/BBoneTrader.NewAuction.js")"> </script>
+        <script src="@Url.Content("~/public/js/NewAuction/BBoneTrader.NewAuction.Models.js")"> </script>
+        <script src="@Url.Content("~/public/js/Log/BBoneTrader.Log.js")"> </script>
+        <script src="@Url.Content("~/public/js/BBoneTrader.Menu.js")"> </script>
+        
+        
+     @*   <script src="@Url.Content("~/public/js/examples/examples.js")"> </script>*@
+        
+    
+    </body>
+</html>
